@@ -1,0 +1,9 @@
+The following CSS rule unintentionally targets more elements than intended due to a lack of specificity:
+
+```css
+.container p {
+  color: blue;
+}
+```
+
+If other elements within the `.container` also have the `p` tag, this will impact them as well. For example, if there's a `<p>` within a `<div>` inside the `.container`, this CSS will change its color to blue.
