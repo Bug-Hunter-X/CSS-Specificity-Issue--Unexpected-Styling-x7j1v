@@ -1,0 +1,9 @@
+To resolve this, we should increase the specificity to target only the directly nested paragraphs:
+
+```css
+.container > p {
+  color: blue;
+}
+```
+
+The `>` ensures that only direct children are targeted. Alternatively, if more control is needed, more specific class or ID selectors could be added.
